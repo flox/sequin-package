@@ -73,7 +73,7 @@ gnumake.pkg-path = "gnumake"
 ##  $ flox build
 ##  $ flox publish
 ## ------------------------------------------------------------------
- [build.seqin]
+ [build.sequin]
  description = "Fast and reliable Postgres change data capture"
  version = "v0.14.6"
  command = """

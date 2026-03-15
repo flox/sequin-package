@@ -14,7 +14,7 @@
     "profile": {},
     "options": {},
     "build": {
-      "seqin": {
+      "sequin": {
         "command": "   mkdir -p $out/bin\n   # 1. Ensure the directory exists\n   if [ ! -d \"sequin\" ]; then\n     git clone https://github.com/sequinstream/sequin\n   fi\n   # 2. Update and sync\n   pushd sequin/cli\n   git fetch --all --tags\n   git checkout v0.14.6\n   \n   # 3. Build \n   go build -tags prod -o $out/bin/sequin .\n   popd\n ",
         "version": "v0.14.6",
         "description": "Fast and reliable Postgres change data capture"
